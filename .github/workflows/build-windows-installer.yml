@@ -1,0 +1,27 @@
+name: Build Windows installer
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Inno Setup
+        run: choco install innosetup --yes --no-progress
+      - name: Build installer
+        shell: pwsh
+        run: ./scripts/build_windows_installer.ps1
+      - name: Upload installer artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: WatchfulEye-Windows-Installer
+          path: dist/installer/WatchfulEye-Setup-*.exe
+          if-no-files-found: error

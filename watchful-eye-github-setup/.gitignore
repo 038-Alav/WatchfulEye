@@ -1,0 +1,46 @@
+# Python environments
+.venv/
+.venv*/
+venv/
+ENV/
+env/
+
+# Python bytecode and test/tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Editable/package build metadata
+*.egg-info/
+.eggs/
+
+# PyInstaller and distribution output
+build/
+dist/
+installer-output/
+*.spec.bak
+
+# Watchful Eye runtime data (network inventory and history)
+# Keep data/.gitkeep if the directory needs to exist in a fresh checkout.
+data/*.json
+data/**/*.json
+logs/
+*.log
+*.log.*
+
+# Local environment variables and credentials
+.env
+.env.*
+!.env.example
+
+# OS/editor temporary files
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+*~

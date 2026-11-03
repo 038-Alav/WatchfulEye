@@ -1,0 +1,3 @@
+[scan]
+timeout_seconds = 2
+max_hosts = 1024
