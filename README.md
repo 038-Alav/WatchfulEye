@@ -3,6 +3,9 @@
 [![Build Windows installer](https://github.com/038-Alav/WatchfulEye/actions/workflows/build-windows-installer.yml/badge.svg)](https://github.com/038-Alav/WatchfulEye/actions/workflows/build-windows-installer.yml)
 [![Latest Release](https://img.shields.io/github/v/release/038-Alav/WatchfulEye?display_name=tag)](https://github.com/038-Alav/WatchfulEye/releases)
 
+Copyright © 2026. All rights reserved.
+Watchful Eye is proprietary software. No license is granted to use, modify, reproduce, or distribute this software.
+
 Version: 0.2.0 — Phase 4 Proof of Concept
 
 Watchful Eye is a native desktop application for discovering devices on one
